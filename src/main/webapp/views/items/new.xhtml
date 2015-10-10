@@ -1,0 +1,57 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+				xmlns:ui="http://java.sun.com/jsf/facelets"
+				xmlns:h="http://java.sun.com/jsf/html"
+				xmlns:f="http://java.sun.com/jsf/core"
+				xmlns:p="http://primefaces.org/ui"
+				template="/WEB-INF/tags/layout.xhtml"
+				xmlns:c="http://java.sun.com/jsp/jstl/core">
+		<ui:define name="content">
+
+				<h:form id="form1" style="">
+					<p:growl id="messages" showDetail="true" />
+
+					<p:panel id="panel">
+					<br/>
+
+						<h:panelGrid id="display" columns="2" cellpadding="4">
+
+							<h:outputText value="Product" for="product"
+								style="padding-left: 30px; padding-right: 30px;" />
+
+							<p:inputText id="product" value="#{itemMB.bean.product}"
+								required="true" label="Product"
+								requiredMessage="Required" />
+								
+							<h:outputText value="Price" for="price"
+								style="padding-left: 30px; padding-right: 30px;" />	
+								
+						    <p:inputText id="price" value="#{itemMB.bean.price}"
+								required="true" label="Price"
+								requiredMessage="Required" />
+								
+						    <h:outputText value="Quantity" for="quantity"
+								style="padding-left: 30px; padding-right: 30px;" />	
+								
+						    <p:inputText id="quantity" value="#{itemMB.bean.quantity}"
+								required="true" label="Quantity"
+								requiredMessage="Required" />
+
+							<p:outputPanel layout="block" style="text-align:center">
+							<br />
+							<br />
+							<p:commandButton value="Reset" styleClass=""
+								update=":form1:panel" process="@this"
+								actionListener="#{itemMB.reset}" />
+							<p:commandButton value="Save" styleClass=""
+								actionListener="#{itemMB.save}"
+								update=":form1:messages, :form1:panel" />
+						</p:outputPanel>
+						
+						</h:panelGrid>
+
+					</p:panel>
+
+				</h:form> 
+			
+		</ui:define>
+	</ui:composition>

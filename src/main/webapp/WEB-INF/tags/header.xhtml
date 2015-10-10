@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	>
+   <body>
+      <ui:composition>
+          <!--Top Menu Bar-->
+          <h2 class="offscreen">Louis Demo</h2>
+          <div id="hmenu">
+              <ul>
+                  <li><a href="http://www.w3.org/Consortium/activities">Restful Web Services</a></li>
+                  <img id="imgsep" src="/images/Amber-Power02-32x32.png" alt="power" title="power" />
+                  <li><a href="http://www.w3.org/TR/">SAAS</a></li>
+                  <li id="seperated"><a href="/views/frameworks/all.xhtml">Frameworks</a></li>
+                  <img id="imgsep" src="/images/Winrar 3D v3 -24x24.png" alt="power" title="power" />
+                  <li><a href="http://www.w3.org/Consortium/siteindex">Hibernate</a></li>
+                  <li><a href="http://www.w3.org/Consortium/new-to-w3c">Struts</a></li>
+                  <li><a href="http://www.w3.org/Consortium/">Spring</a></li>
+                  <li><a href="http://www.w3.org/Consortium/join">Play2</a></li>
+                  <li><a href="http://www.w3.org/Consortium/contact">JSF</a></li>
+              </ul>
+          </div>
+          <br/>
+          <br/>
+
+          <div id="logo">
+          <img style="width: 305px; height: 107px;" alt="asdf" title="asdf"
+               src="/images/swash.jpg" align="middle"/> This is a beautifull world
+          </div>
+          <br/>
+          <br/>
+
+    <h:form>
+      <p:growl id="messages"/>
+<!--Second Menu Bar-->
+      <p:menubar>
+        <p:menuitem value="Home" url="/home.xhtml" icon="ui-icon-home" />
+
+        <p:submenu label="Orders" icon="ui-icon-pencil">
+          <p:menuitem value="Orders List" url="/views/orders/all.xhtml"/>
+          <p:menuitem value="New Order" url="/views/orders/new.xhtml" />
+        </p:submenu>
+
+          <p:submenu label="FrameWorks" icon="ui-icon-star">
+              <p:menuitem value="Framework List" url="/views/frameworks/all.xhtml"  />
+              <p:menuitem value="New Framework" url="/views/frameworks/new.xhtml"  />
+          </p:submenu>
+
+        <p:submenu label="Products and Items" icon="ui-icon-pencil">
+          <p:menuitem value="Items List" url="/views/items/all.xhtml" />
+          <p:menuitem value="New Item" url="/views/items/new.xhtml" />
+          <p:menuitem value="Item List lsg 2" url="/views/items/all2.xhtml"  />
+          <p:menuitem value="Item List lsg 3" url="/views/items/all3.xhtml" />
+        </p:submenu>
+
+      </p:menubar>
+    </h:form>
+
+
+
+      </ui:composition>	
+   </body>
+</html>
