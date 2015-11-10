@@ -8,7 +8,7 @@
 	xmlns:p="http://primefaces.org/ui"
 	>
    <h:head>
-   <ui:param name="root" value="#{request.contextPath}/" />
+   <ui:param name="root" value="#{request.contextPath}/jsf" />
 			<meta http-equiv="X-UA-Compatible" content="EmulateIE8" />
 			<meta content='text/html; charset=UTF-8' http-equiv="Content-Type" />
 			
@@ -55,7 +55,7 @@
 
       	<div class="container-fluid" style="min-height:300px">
       	<!-- Content Facelets -->
-         	<ui:insert name="contentJsf" >
+         	<ui:insert name="content" >
             
          	</ui:insert>   
          </div> 

@@ -1,0 +1,11 @@
+${env.M2_REPO}/
+.idea/
+.settings/
+Database/
+Saved/
+target/
+.project
+.springBeans
+primefaces-spring-jpa-tutorial.iml
+References/
+.DS_Store

@@ -13,4 +13,11 @@
 
 	</persistence-unit>
 
+<!--    <persistence-unit name="org.lsgalicia_LouisGalicia_war_1.0-SNAPSHOTPU" transaction-type="JTA">
+        <jta-data-source>LouisGalicia2</jta-data-source>
+        <exclude-unlisted-classes>false</exclude-unlisted-classes>
+        <properties/>
+    </persistence-unit>
+    -->
+
 </persistence>
