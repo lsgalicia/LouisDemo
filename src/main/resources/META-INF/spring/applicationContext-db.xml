@@ -41,15 +41,22 @@
 
 
 	<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+
 		<property name="driverClassName" value="org.postgresql.Driver"/>
-		<property name="url" value="jdbc:postgresql://localhost:5432/louisdemo"/>
-		<property name="username" value="Louis"/>
-		<property name="password" value="12Seth12"/>
+		<property name="url" value="jdbc:postgresql://ec2-107-21-223-110.compute-1.amazonaws.com:5432/d943pc0sc951gv"/>
+		<property name="username" value="oafglmfvvwxlxt"/>
+		<property name="password" value="pz068vwjuXf88VxvB-LVesOhru"/>
+
+
+		<!--<property name="driverClassName" value="org.postgresql.Driver"/>-->
+		<!--<property name="url" value="jdbc:postgresql://localhost:5432/louisdemo"/>-->
+		<!--<property name="username" value="Louis"/>-->
+		<!--<property name="password" value="12Seth12"/>-->
 		
-<!--		<property name="driverClassName" value="${h2.driverClassName}"/>
-		<property name="url" value="${h2.url}"/>
-		<property name="username" value="${h2.username}"/>
-		<property name="password" value="${h2.password}"/>-->
+		<!--<property name="driverClassName" value="${h2.driverClassName}"/>-->
+		<!--<property name="url" value="${h2.url}"/>-->
+		<!--<property name="username" value="${h2.username}"/>-->
+		<!--<property name="password" value="${h2.password}"/>-->
 		
 	</bean>
 
