@@ -1,5 +1,6 @@
 package org.lsgalicia.prime.faces.bean;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
@@ -8,7 +9,7 @@ import javax.faces.bean.ViewScoped;
 
 @ManagedBean(name="ImagesView")
 @ViewScoped
-public class ImagesView {
+public class ImagesView implements Serializable {
 
     private List<String> images;
 
