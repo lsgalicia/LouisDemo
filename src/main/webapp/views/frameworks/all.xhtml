@@ -21,10 +21,11 @@
 
 					<p:column headerText="Name" style="width:20%" sortBy="#{object.name}"
 						filterBy="#{object.name}" filterMatchMode="contains">
-						<h:outputLink value="#{object.url}">#{object.name}</h:outputLink>
+						<h:outputText value="#{object.name}" />
+						<!--<h:outputLink value="#{object.url}">#{object.name}</h:outputLink>-->
 					</p:column>
 
-					<p:column headerText="description" style="width:64%" sortBy="#{object.description}"
+					<p:column headerText="description" style="width:64%"
 						filterBy="#{object.description}" filterMatchMode="contains">
 						<h:outputText value="#{object.description}" />
 					</p:column>
